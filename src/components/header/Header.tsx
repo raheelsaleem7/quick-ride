@@ -3,12 +3,12 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
-import { usePathname } from 'next/navigation'; // Use usePathname from next/navigation
+import { usePathname } from 'next/navigation';
 import logo from '@/assets/images/logo.png';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const pathname = usePathname(); // Get the current pathname
+    const pathname = usePathname();
 
     const navItems = [
         { name: 'Taxi', href: '/taxi' },
