@@ -3,6 +3,7 @@
 import { PlayCircle } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import bikeRide from '../../assets/images/bike.png';
 
 const carpoolVideos = [
     {
@@ -63,6 +64,26 @@ const CarpoolOptions = () => {
                     </div>
                 </div>
             ))}
+
+            <div className="flex flex-col md:flex-row items-center gap-8">
+                <div>
+                    <Image
+                        src={bikeRide}
+                        alt={`bikeRide`}
+                        className="md:w-[1400px] w-[auto] h-full object-cover cursor-pointer"
+                    />
+                </div>
+                <div>
+                    <h2>Bikepool</h2>
+                    <p className="text-gray-700 font-medium mb-2">Quick. Affordable</p>
+                    <p className="text-gray-600 mb-4">
+                        Bike pooling helps commuters to cut down the travel time and also save money. Bike pooling has
+                        turned out to be a perfect solution for urban daily commuters, especially during peak hours. You
+                        can find a bikepool as low as 4/km. If you have a bike, offer bikepool and get free fuel and
+                        save up to Rs. 4000 per month.
+                    </p>
+                </div>
+            </div>
         </div>
     );
 };

@@ -2,11 +2,13 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '@/assets/images/logo.png';
 import { Menu, X } from 'lucide-react';
+import { usePathname } from 'next/navigation'; // Use usePathname from next/navigation
+import logo from '@/assets/images/logo.png';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname(); // Get the current pathname
 
     const navItems = [
         { name: 'Taxi', href: '/taxi' },
@@ -25,15 +27,17 @@ const Header = () => {
                 </div>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex gap-6 text-sm font-medium items-center">
+                <nav className="hidden md:flex gap-8 text-sm font-medium items-center">
+                    {' '}
+                    {/* Increased gap to 8 */}
                     {navItems.map((item) => (
                         <Link
                             key={item.name}
                             href={item.href}
                             className={`flex items-center gap-1 transition ${
-                                item.highlight
-                                    ? 'text-green-600 border-b-2 border-green-600 pb-1'
-                                    : 'hover:text-green-600 text-black'
+                                pathname === item.href // Use pathname here
+                                    ? 'text-[#1d9b1d] font-semibold border-b-2 border-green-600' // Active with underline and padding
+                                    : 'hover:text-[#1d9b1d] text-black' // Non-active color
                             }`}
                         >
                             {item.name}
@@ -49,13 +53,17 @@ const Header = () => {
 
             {/* Mobile Nav */}
             {isOpen && (
-                <div className="md:hidden px-4 pb-4 flex flex-col gap-4 bg-white text-sm border-t">
+                <div className="md:hidden px-4 pb-4 flex flex-col gap-6 bg-white text-sm border-t">
+                    {' '}
+                    {/* Increased gap to 6 */}
                     {navItems.map((item) => (
                         <Link
                             key={item.name}
                             href={item.href}
                             className={`flex items-center gap-2 ${
-                                item.highlight ? 'text-green-600 font-semibold' : 'text-gray-800'
+                                pathname === item.href // Use pathname here for mobile as well
+                                    ? 'text-green-600 font-semibold border-b-2 border-green-600 pb-1' // Active with underline and padding
+                                    : 'text-gray-800' // Non-active color
                             }`}
                         >
                             {item.name}

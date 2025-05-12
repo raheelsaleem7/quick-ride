@@ -27,10 +27,10 @@ const WhyCarpol = () => {
     ];
     return (
         <div>
-            <div className="max-w-6xl mx-auto text-center">
+            <div className="max-w-6xl mx-auto text-center px-4">
                 <div>
-                    <h2 className=" mb-4">Why Should We Carpool</h2>
-                    <p className=" mb-10">
+                    <h2 className="mb-4 text-2xl md:text-3xl">Why Should We Carpool</h2>
+                    <p className="mb-10 text-sm sm:text-base">
                         If we could all carpool, it would cut down the number of cars on the road to a great extent;
                         mean
                         <br className="hidden lg:block" />
@@ -41,7 +41,7 @@ const WhyCarpol = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {carpoolBenefits.map((benefit, index) => (
                         <div key={index} className="flex flex-col items-center text-center">
-                            <div className="ounded-xl  overflow-hidden mb-4">
+                            <div className="rounded-xl overflow-hidden mb-4">
                                 <img
                                     src={
                                         typeof benefit.img === 'object' && 'src' in benefit.img
@@ -54,12 +54,12 @@ const WhyCarpol = () => {
                                     className="object-contain w-full h-full"
                                 />
                             </div>
-                            <h3 className="">{benefit.name}</h3>
+                            <h3 className="text-lg sm:text-xl">{benefit.name}</h3>
                         </div>
                     ))}
                 </div>
             </div>
-            <div className="flex justify-center items-center text-center mt-10">
+            <div className="flex justify-center items-center text-center mt-10 px-4">
                 <div className="relative w-full max-w-5xl aspect-video rounded-3xl overflow-hidden shadow-lg">
                     {!isPlaying ? (
                         <div className="relative w-full h-full">
