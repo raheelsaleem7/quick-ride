@@ -1,4 +1,5 @@
 'use client';
+
 import CarpoolInfo from '@/components/carpoolInfo/CarpoolInfo';
 import CarpoolOptions from '@/components/carpoolOptions/CarpoolOptions';
 import Footer from '@/components/footer/Footer';
