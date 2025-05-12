@@ -6,6 +6,7 @@ import image2 from '@/assets/images/traffic.png';
 import image3 from '@/assets/images/friends.png';
 import { PlayCircle } from 'lucide-react';
 import Headline from '../headline/Headline';
+import Image from 'next/image';
 
 const WhyCarpol = () => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -42,7 +43,7 @@ const WhyCarpol = () => {
                     {carpoolBenefits.map((benefit, index) => (
                         <div key={index} className="flex flex-col items-center text-center">
                             <div className="rounded-xl overflow-hidden mb-4">
-                                <img
+                                <Image
                                     src={
                                         typeof benefit.img === 'object' && 'src' in benefit.img
                                             ? benefit.img.src
@@ -63,10 +64,12 @@ const WhyCarpol = () => {
                 <div className="relative w-full max-w-5xl aspect-video rounded-3xl overflow-hidden shadow-lg">
                     {!isPlaying ? (
                         <div className="relative w-full h-full">
-                            <img
+                            <Image
                                 src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
                                 alt="Quick Ride Video"
                                 className="w-full h-full object-cover"
+                                width={100}
+                                height={100}
                             />
 
                             <button

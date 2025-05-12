@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { PlayCircle } from 'lucide-react';
 import { Button } from '../ui/button';
+import Image from 'next/image';
 
 const VideoSection = () => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -19,10 +20,12 @@ const VideoSection = () => {
             <div className="relative w-full max-w-5xl aspect-video rounded-3xl overflow-hidden shadow-lg">
                 {!isPlaying ? (
                     <div className="relative w-full h-full">
-                        <img
+                        <Image
                             src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                             alt="Quick Ride Video"
                             className="w-full h-full object-cover"
+                            width={100}
+                            height={100}
                         />
                         <button
                             onClick={() => setIsPlaying(true)}

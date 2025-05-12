@@ -11,6 +11,7 @@ import fouthImg from '../../assets/images/fourth.png';
 import fifthImg from '../../assets/images/fifth.png';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Image from 'next/image';
 
 const steps = [
     {
@@ -58,10 +59,12 @@ export default function HowItWorks() {
                     {steps.map((step) => (
                         <SwiperSlide key={step.id}>
                             <div className="flex flex-col items-center">
-                                <img
+                                <Image
                                     src={step.img.src}
                                     alt={step.title}
                                     className="w-[325px] h-full object-cover cursor-pointer"
+                                    width={100}
+                                    height={100}
                                 />
                                 <p className="mt-4 ">{step.title}</p>
                             </div>

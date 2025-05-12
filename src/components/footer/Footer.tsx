@@ -1,6 +1,6 @@
 'use client';
 
-import { Facebook, Instagram, Linkedin, ArrowUp, X } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, X } from 'lucide-react';
 import Image from 'next/image';
 import logo from '@/assets/images/quickride-logo-white.svg';
 
@@ -30,8 +30,8 @@ const Footer: React.FC = () => {
                     <div className="flex items-center mb-4">
                         <Image src={logo} alt="Quick Ride" className="w-[180px] h-auto" />
                     </div>
-                    <p className=" mb-4 text-[white]">Carpool • Bikepool • Taxi</p>
-                    <p className=" text-[white]">India's Best Carpooling Network for Your Daily Commuting.</p>
+                    <p className="mb-4 text-[white]">Carpool • Bikepool • Taxi</p>
+                    <p className="text-[white]">India&apos;s Best Carpooling Network for Your Daily Commuting.</p>
 
                     {/* Social Icons */}
                     <div className="flex gap-4 mt-6">

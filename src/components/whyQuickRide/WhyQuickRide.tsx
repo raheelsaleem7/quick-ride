@@ -4,6 +4,7 @@ import offer from '@/assets/images/offer.png';
 import flexible from '@/assets/images/flexible.png';
 import instant from '@/assets/images/instant.png';
 import company from '@/assets/images/company.png';
+import Image from 'next/image';
 
 const features = [
     {
@@ -47,7 +48,7 @@ const WhyQuickRide = () => {
                     {features.map((feature, index) => (
                         <div key={index} className="flex flex-col items-center text-center">
                             <div className="ounded-xl  overflow-hidden mb-4">
-                                <img
+                                <Image
                                     src={
                                         typeof feature.image === 'object' && 'src' in feature.image
                                             ? feature.image.src

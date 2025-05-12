@@ -168,3 +168,8 @@ p {
 .swiper-pagination-bullet-active {
     background-color: #1d9b1d !important;
 }
+
+.swiper-pagination {
+    display: flex !important;
+    justify-content: end !important;
+}

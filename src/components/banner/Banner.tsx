@@ -1,9 +1,11 @@
+import Image from 'next/image';
+
 const Banner = () => {
     return (
         <section className="pt-20 bg-gray-100">
             <div className="max-w-6xl mx-auto px-4 text-center">
                 <div className="relative">
-                    <img
+                    <Image
                         src="/carpool-banner.jpg" // Replace with actual image path
                         alt="Carpool Banner"
                         className="w-full h-auto rounded-lg"
