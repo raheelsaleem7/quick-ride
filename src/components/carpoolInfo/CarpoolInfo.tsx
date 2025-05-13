@@ -8,14 +8,14 @@ const CarpoolInfo = () => {
         <div className="max-w-7xl mx-auto py-12 px-4 space-y-8">
             <div>
                 <h2>Carpool within city</h2>
-                <p className="text-gray-700 font-medium mb-2">
+                <p className=" font-medium mb-2">
                     Carpooling is the best option for socially responsible citizens to commute within the city. You can
                     use Quick Ride carpool to go to the office, conference, event, shopping party, or airport.
                 </p>
             </div>
             <div>
                 <h2>Intercity Carpool</h2>
-                <p className="text-gray-700 font-medium mb-2">
+                <p className=" font-medium mb-2">
                     Carpool to destinations outside your city is very pocket friendly. With verified professionals,
                     automated payments, live tracking, and SOS features, it is certainly safe to travel outside your
                     city using Quick Ride. You get to save 80% on your outstation trip cost with comfortable car rides{' '}
@@ -43,10 +43,10 @@ const CarpoolInfo = () => {
                     </div>
                     <div>
                         <h2 className="">Danya Kumar</h2>
-                        <p className="text-gray-700 font-medium">Transport, WIPRO</p>
+                        <p className=" font-medium">Transport, WIPRO</p>
                     </div>
                 </div>
-                <p className="text-gray-700 font-medium ">
+                <p className=" font-medium ">
                     “We have more than 40,000 Wiproites registered for carpooling through Quick Ride and as a
                     sustainability initiative, we took carpooling with Quick Ride. Happy to see we have saved 12% of
                     parking space and lots of carbon footprints. Carpooling also helped us in optimizing the employee

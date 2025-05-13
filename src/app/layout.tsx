@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header/Header';
 import { Montserrat } from 'next/font/google';
-
+import { Toaster } from '@/components/ui/sonner';
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -40,6 +40,8 @@ export default function RootLayout({
                 <Header />
 
                 <div>{children}</div>
+
+                <Toaster richColors position="top-right" />
             </body>
         </html>
     );

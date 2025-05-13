@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Main Footer Content */}
-            <div className="px-6 py-10 md:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-white">
+            <div className="px-6 py-10 md:px-5 lg:px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-white">
                 {/* Left Section */}
                 <div>
                     <div className="flex items-center mb-4">

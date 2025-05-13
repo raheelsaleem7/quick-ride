@@ -60,3 +60,7 @@ const VideoSection = () => {
 };
 
 export default VideoSection;
+    <p className=" mb-8 max-w-xl font-montserrat ">
+                    Discover affordable, eco-friendly rides and make <br className="lg:block hidden" /> every trip
+                    better with Quick Ride.
+                </p>
