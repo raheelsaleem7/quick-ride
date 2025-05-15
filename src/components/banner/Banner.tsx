@@ -9,6 +9,8 @@ const Banner = () => {
                         src="/carpool-banner.jpg" // Replace with actual image path
                         alt="Carpool Banner"
                         className="w-full h-auto rounded-lg"
+                        width={100}
+                        height={100}
                     />
                     <div className="absolute top-6 left-6 bg-green-600 text-white text-sm px-4 py-2 rounded-full shadow-lg">
                         I help Colleagues & Save upto ₹15,000/month

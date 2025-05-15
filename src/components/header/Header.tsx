@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
-import logo from '@/assets/images/logo.png';
+import logo from '@/assets/icons/logo.jpeg';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,7 @@ const Header = () => {
             <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2 md:py-3">
                 {/* Logo and Title */}
                 <div className="flex items-center gap-2">
-                    <Image src={logo} alt="Quick Ride" className="w-[100%]" />
+                    <Image src={logo} alt="Quick Ride" className="w-[60px] rounded-[5px]" />
                 </div>
 
                 {/* Desktop Nav */}

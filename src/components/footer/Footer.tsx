@@ -2,7 +2,8 @@
 
 import { Facebook, Instagram, Linkedin, X } from 'lucide-react';
 import Image from 'next/image';
-import logo from '@/assets/images/quickride-logo-white.svg';
+import logo from '@/assets/icons/logo.jpeg';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
     return (
@@ -24,16 +25,16 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Main Footer Content */}
-            <div className="px-6 py-10 md:px-5 lg:px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-white">
-                {/* Left Section */}
-                <div>
-                    <div className="flex items-center mb-4">
-                        <Image src={logo} alt="Quick Ride" className="w-[180px] h-auto" />
+            <div className="px-6 py-10 md:px-5 lg:px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-white">
+                {/* Column 1 */}
+                <div className="flex flex-col justify-between h-full">
+                    <div>
+                        <div className="flex items-center mb-4">
+                            <Image src={logo} alt="Quick Ride" className="w-[60px] rounded-[5px] h-auto" />
+                        </div>
+                        <p className="mb-4 text-[white]">Carpool • Bikepool • Taxi</p>
+                        <p className="text-[white]">India&apos;s Best Carpooling Network for Your Daily Commuting.</p>
                     </div>
-                    <p className="mb-4 text-[white]">Carpool • Bikepool • Taxi</p>
-                    <p className="text-[white]">India&apos;s Best Carpooling Network for Your Daily Commuting.</p>
-
-                    {/* Social Icons */}
                     <div className="flex gap-4 mt-6">
                         <a
                             href="https://www.facebook.com/QuickRidein/"
@@ -70,34 +71,50 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Center Section */}
-                <div className=" flex flex-col gap-2">
-                    <a href="#" className="hover:underline">
-                        About us
-                    </a>
-                    <a href="#" className="hover:underline">
-                        Career
-                    </a>
-                    <a href="#" className="hover:underline">
-                        Privacy
-                    </a>
+                {/* Column 2 */}
+                <div className="flex flex-col justify-between h-full">
+                    <div className="flex flex-col gap-2">
+                        <a href="#" className="hover:underline">
+                            About us
+                        </a>
+                        <a href="#" className="hover:underline">
+                            Career
+                        </a>
+                        <a href="#" className="hover:underline">
+                            Privacy
+                        </a>
+                    </div>
                     <p className="mt-4 text-[white]">© 2023. Quick Ride. All rights reserved.</p>
                 </div>
 
-                {/* Right Section */}
-                <div className=" flex flex-col gap-2">
-                    <a href="#" className="hover:underline">
-                        Contact us
-                    </a>
-                    <a href="#" className="hover:underline">
-                        Sitemap
-                    </a>
-                    <a href="#" className="hover:underline">
-                        Media
-                    </a>
-                    <a href="#" className="hover:underline">
-                        Terms
-                    </a>
+                {/* Column 3 */}
+                <div className="flex flex-col justify-between h-full">
+                    <div className="flex flex-col gap-2">
+                        <a href="#" className="hover:underline">
+                            Contact us
+                        </a>
+                        <a href="#" className="hover:underline">
+                            Sitemap
+                        </a>
+                        <a href="#" className="hover:underline">
+                            Media
+                        </a>
+                        <a href="#" className="hover:underline">
+                            Terms
+                        </a>
+                    </div>
+                </div>
+
+                {/* Column 4 */}
+                <div className="flex flex-col justify-between h-full">
+                    <div className="flex flex-col gap-2">
+                        <Link href="/enterprise" className="hover:underline">
+                            Enterprise
+                        </Link>
+                        <Link href="/help" className="hover:underline">
+                            Help
+                        </Link>
+                    </div>
                 </div>
             </div>
         </footer>

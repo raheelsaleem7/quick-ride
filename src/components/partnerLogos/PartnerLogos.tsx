@@ -5,12 +5,10 @@ import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import firstImg from '../../assets/images/cap.png';
 import secondImg from '../../assets/images/congni.png';
-import thirdImg from '../../assets/images/ibm.png';
-import fouthImg from '../../assets/images/infosys.png';
 import fifthImg from '../../assets/images/wipro.png';
 import Image from 'next/image';
 
-const logos = [firstImg, secondImg, thirdImg, fouthImg, fifthImg];
+const logos = [firstImg, secondImg, fifthImg];
 
 export default function PartnerLogos() {
     return (
