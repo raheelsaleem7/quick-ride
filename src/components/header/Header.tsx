@@ -11,7 +11,7 @@ const Header = () => {
     const pathname = usePathname();
 
     const navItems = [
-        { name: 'Taxi', href: '/taxi' },
+        { name: 'Home', href: '/home' },
         { name: 'Carpool', href: '/carpool', highlight: true },
         { name: 'Contact us', href: '/contact' },
         { name: 'About us', href: '/about' },
